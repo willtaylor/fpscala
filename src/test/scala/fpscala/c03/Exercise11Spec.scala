@@ -5,7 +5,7 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class Exercise11Spec extends FlatSpec with Matchers {
 
-  "foldLeft sum, product, and length" should "work" in {
+  "foldLeft versions of sum, product, and length" should "work" in {
     Exercise11.sum(FpList(1, 2, 3, 4)) should equal (10)
     Exercise11.product(FpList(1.0, 2.0, 3.0, 4.0, 0.0)) should equal (0.0)
     Exercise11.product(FpList(1.0, 2.0, 3.0, 4.0)) should equal (24.0)
