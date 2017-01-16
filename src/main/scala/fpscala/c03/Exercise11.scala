@@ -2,7 +2,7 @@ package fpscala.c03
 
 import fpscala.datastructures.{List => FpList}
 
-object Exercise11 extends App {
+object Exercise11 {
 
   def sum(l: FpList[Int]) = Exercise10.foldLeft(l, 0)(_ + _)
 

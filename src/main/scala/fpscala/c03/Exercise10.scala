@@ -4,7 +4,7 @@ import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
 
 import scala.annotation.tailrec
 
-object Exercise10 extends App {
+object Exercise10 {
 
   @tailrec
   def foldLeft[A, B](as: FpList[A], z: B)(f: (B, A) => B): B = as match {
