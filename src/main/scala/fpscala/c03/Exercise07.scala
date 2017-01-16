@@ -2,7 +2,7 @@ package fpscala.c03
 
 import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
 
-object Exercise7 {
+object Exercise07 {
 
   def foldRightWithShortCircuit[A, B](as: FpList[A], z: B, sc: B*)(f: (A, B) => B): B = as match {
     case FpNil => z

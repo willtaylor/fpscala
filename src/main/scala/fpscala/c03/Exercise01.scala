@@ -1,6 +1,6 @@
 package fpscala.c03
 
-object Exercise1 extends App {
+object Exercise01 extends App {
 
   val x = List(1, 2, 3, 4, 5) match {
     case x :: 2 :: 4 :: _ => x

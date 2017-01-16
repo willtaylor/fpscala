@@ -4,7 +4,7 @@ import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
 
 import scala.annotation.tailrec
 
-object Exercise5 {
+object Exercise05 {
 
   @tailrec
   def dropWhile[A](l: FpList[A], p: A => Boolean): FpList[A] = l match {

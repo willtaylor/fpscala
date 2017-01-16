@@ -2,7 +2,7 @@ package fpscala.c03
 
 import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
 
-object Exercise6 {
+object Exercise06 {
 
   def append[A](a: A, l: FpList[A]): FpList[A] = l match {
     case FpNil => Cons(a, FpNil)
