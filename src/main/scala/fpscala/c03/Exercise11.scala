@@ -1,8 +1,6 @@
 package fpscala.c03
 
-import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
-
-import scala.annotation.tailrec
+import fpscala.datastructures.{List => FpList}
 
 object Exercise11 extends App {
 
