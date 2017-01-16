@@ -1,6 +1,6 @@
 package fpscala.c03
 
-import fpscala.datastructures.{List => FpList, Nil => FpNil}
+import fpscala.datastructures.{List => FpList}
 import org.scalatest.{FlatSpec, Matchers}
 
 class Exercise13Spec extends FlatSpec with Matchers {

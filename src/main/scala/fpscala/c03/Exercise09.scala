@@ -1,6 +1,6 @@
 package fpscala.c03
 
-import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
+import fpscala.datastructures.{List => FpList}
 
 object Exercise09 extends App {
 
