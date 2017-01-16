@@ -4,12 +4,12 @@ import fpscala.datastructures.{Cons, List => FpList, Nil => FpNil}
 
 object Exercise6 {
 
-  def init[A](l: FpList[A]): FpList[A] = {
+  def append[A](a: A, l: FpList[A]): FpList[A] = l match {
+    case FpNil => Cons(a, FpNil)
+    case Cons(x, xs) => Cons(x, append(a, xs))
+  }
 
-    def append[A](a: A, l: FpList[A]): FpList[A] = l match {
-      case FpNil => Cons(a, FpNil)
-      case Cons(x, xs) => Cons(x, append(a, xs))
-    }
+  def init[A](l: FpList[A]): FpList[A] = {
 
     def go(accum: FpList[A], orig: FpList[A]): FpList[A] = orig match {
       case FpNil => accum
