@@ -16,7 +16,7 @@ object Exercise13 {
     go(z)
 
     // one-liner
-    FpList.foldRight(as, (b:B) => b)((a, g) => b => g(f(b, a)))(z)
+    FpList.foldRight(as, (b: B) => b)((a, g) => b => g(f(b, a)))(z)
   }
 
   def foldRight[A, B](as: FpList[A], z: B)(f: (A, B) => B): B = {
